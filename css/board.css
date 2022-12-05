@@ -1,0 +1,720 @@
+@font-face {
+  font-family: Nasa;
+  src: url("/font/nasalization-rg.otf");
+}
+
+body {
+
+
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+
+}
+
+
+
+
+
+#canvas {
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, rgb(4, 4, 7), rgb(47, 37, 136));
+
+  background-size: cover;
+
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+.circle {
+  position: relative;
+  height: 500px;
+  ;
+
+  width: 500px;
+  z-index: -1;
+
+  animation: rotate 10s linear infinite;
+
+
+  content: "";
+  position: absolute;
+  left: 48%;
+  bottom: -10%;
+
+  border: 10px shadow rgba(255, 255, 255, 0.747);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  animation: anim 10s linear infinite;
+
+}
+
+@keyframes anim {
+  0% {
+    box-shadow: 0 0 10px rgb(123, 122, 207), inset 0 0 115px rgb(61, 149, 250);
+  }
+
+  10% {
+    box-shadow: 0 0 12px rgb(115, 140, 221), inset 0 0 118px rgb(39, 123, 219);
+  }
+
+  20% {
+    box-shadow: 0 0 15px rgb(75, 139, 212), inset 0 0 122px rgb(40, 133, 209);
+  }
+
+  30% {
+    box-shadow: 0 0 17px rgb(85, 162, 250), inset 0 0 118px rgb(34, 99, 184);
+  }
+
+  40% {
+    box-shadow: 0 0 20px rgb(80, 133, 175), inset 0 0 115px rgb(17, 69, 214);
+  }
+
+  50% {
+    box-shadow: 0 0 22px rgb(154, 202, 224), inset 0 0 112px rgb(44, 139, 216);
+  }
+
+  60% {
+    box-shadow: 0 0 20px rgb(107, 133, 180), inset 0 0 115px rgb(36, 152, 172);
+  }
+
+  70% {
+    box-shadow: 0 0 17px rgb(78, 129, 238), inset 0 0 115px rgb(32, 97, 219);
+  }
+
+  80% {
+    box-shadow: 0 0 15px rgb(68, 117, 209), inset 0 0 115px rgb(20, 166, 223);
+  }
+
+  90% {
+    box-shadow: 0 0 12px rgb(68, 153, 209), inset 0 0 115px rgb(28, 184, 223);
+  }
+
+  100% {
+    box-shadow: 0 0 10px rgb(35, 160, 218), inset 0 0 115px rgb(35, 163, 202);
+  }
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+.circle2 {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  left: 10%;
+  bottom: 50%;
+  animation: rotate2 30s linear infinite;
+
+
+  content: "";
+
+
+  /*border: 10px solid rgba(196, 132, 81, 0.788);*/
+  border-radius: 50%;
+  box-shadow: 0 0 200px #fff;
+  animation: anim 12s linear infinite;
+
+}
+
+@keyframes anim2 {
+  0% {
+    box-shadow: 0 0 250px rgb(243, 241, 241);
+
+  }
+
+  20% {
+    box-shadow: 0 0 150px rgb(243, 233, 219);
+
+  }
+
+  40% {
+    box-shadow: 0 0 250px rgb(223, 243, 177);
+
+  }
+
+  60% {
+    box-shadow: 0 0 350px rgb(243, 221, 124);
+
+  }
+
+  80% {
+    box-shadow: 0 0 250px rgb(236, 197, 171);
+
+  }
+
+  100% {
+    box-shadow: 0 0 150px rgb(241, 230, 221);
+
+  }
+
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.grid-container {
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+
+}
+
+
+.gridInfo {
+
+  display: inline-flex;
+  width: 100%;
+  height: 120px;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+#imgOpponent {
+
+
+  width: 150px;
+  height: 150px;
+  margin-left: 250px;
+  border: 2px solid rgba(236, 225, 225, 0.459);
+  box-shadow: 0 0 30px rgb(255, 255, 255), inset 0 0 10px #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-image: url("../img/101.png");
+  background-size: cover;
+  animation: anim2 5s linear infinite;
+}
+
+.timeOpponent {
+
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(23, 59, 100);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(184, 155, 184);
+  box-shadow: 0 0 30px rgb(71, 116, 240), inset 0 0 10px #fff;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  display: flex;
+  font-family: 'nasa';
+
+}
+
+
+
+.scorePlayer {
+
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(184, 155, 184);
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  border-radius: 50%;
+  margin-left: 250px;
+  margin-right: 50px;
+  background-color: rgb(45, 45, 153);
+  justify-content: center;
+  align-items: center;
+}
+
+#user {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  margin-left: 55px;
+  font-family: 'nasa';
+  margin-top: 50px;
+  color: white;
+
+
+}
+
+#scoreP {
+  position: absolute;
+  font-size: 65px;
+  margin-top: 80px;
+  margin-left: 70px;
+  color: rgb(255, 255, 255);
+  font-family: 'nasa';
+  font-weight: bold;
+}
+
+.scoreOpponent {
+
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  border-radius: 50%;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: rgb(248, 77, 25);
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#usernameOpponent {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  font-family: 'nasa';
+  margin-top: 50px;
+  margin-left:50px;
+  color: white;
+
+
+}
+
+#scoreO {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 85px;
+  font-size: 65px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: 'nasa';
+
+}
+
+.mp {
+
+  position: absolute;
+  margin-top: 60px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(184, 155, 184);
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+
+  font-family: 'nasa';
+  background-color: rgb(255, 238, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.mini-card {
+
+  width: 300px;
+  height: 100px;
+  display: inline-block;
+
+
+}
+
+.mini-carddiv {
+  display: inline-block;
+  width: 45px;
+  height: 60px;
+  background-size: cover;
+  background-image: url("../img/mini-cardO.png");
+
+}
+
+#gridOpponent {
+
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+
+#gridBoardOpponent {
+
+  height: 25vh;
+  width: 80vw;
+  margin-left: 10%;
+  margin-top: 30px;
+  background-color: rgba(17, 17, 17, 0.308);
+  display: inline-flex;
+  text-align: center;
+}
+
+
+#gridBoardPlayer {
+
+
+  height: 25vh;
+  width: 80vw;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  background-color: rgba(17, 17, 17, 0.308);
+  display: inline-flex;
+  text-align: center;
+
+
+
+
+
+}
+
+#gridPlayer {
+
+
+  display: inline-flex;
+  height: 18vh;
+  margin-left: 15%;
+  align-items: center;
+
+
+}
+
+
+.cardPlayer {
+
+  display: inline-block;
+  width: 150px;
+  height: 209px;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10%;
+  font-size: medium;
+  font-family: 'nasa';
+  color: #fff;
+  border: 5px solid rgb(172, 168, 168);
+  background-color: rgba(23, 21, 39, 0.959);
+
+
+}
+
+
+.cardPlayer>div {
+  font-size: 15px;
+  margin-top: 2px;
+
+}
+
+
+
+.cardOpponent {
+
+  display: inline-block;
+  width: 150px;
+  height: 209px;
+  z-index: 1;
+  margin-left: 5px;
+  font-size: medium;
+  font-family: 'nasa';
+  color: #fff;
+  border: 1px solid white;
+
+  background-color: rgba(7, 6, 6, 0.74);
+
+}
+
+
+#surrender {
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  border-radius: 50%;
+  margin-top: -20px;
+  background-color: rgb(0, 110, 255);
+
+
+}
+
+#surrender,
+h1 {
+
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'nasa';
+
+}
+
+#endTurn {
+  z-index: 1;
+  margin: 20px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  border-radius: 50%;
+  background-color: rgb(245, 71, 71);
+  font-size: medium;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'nasa';
+}
+
+
+#heroPower {
+
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin-top: -40px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  border-radius: 50%;
+  background-color: rgb(65, 163, 255);
+  font-size: medium;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'nasa';
+  animation: anim4 20s linear infinite;
+
+}
+
+@keyframes anim4 {
+  0% {
+    background-color: rgb(212, 0, 255);
+  }
+
+  20% {
+    background-color: rgb(230, 9, 238);
+  }
+
+  40% {
+    background-color: rgb(157, 9, 255);
+  }
+
+  58% {
+    background-color: rgb(184, 32, 230);
+  }
+
+  59.5% {
+    background-color: white;
+
+  }
+
+  60% {
+    background-color: rgb(109, 12, 236);
+  }
+
+  80% {
+    background-color: rgb(164, 6, 255);
+  }
+
+  100% {
+    background-color: rgb(136, 29, 236);
+  }
+
+
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.divImg {
+
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  background-size: cover;
+  margin-left: 25px;
+  box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
+  box-shadow: inset 0 0 20px black;
+  border-radius: 50%;
+
+}
+
+
+
+.divContenant {
+
+
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 10px rgb(17, 17, 17), insergb(110, 110, 110)0 10px #fff;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(38, 3, 70);
+  border-radius: 10%;
+}
+
+
+.divContenantMcs {
+  margin-left: 3px;
+  margin-bottom: 5px;
+  width: 140px;
+  height: 60px;
+  margin-top: 5px;
+  border-radius: 10%;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(38, 3, 70);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+
+}
+
+.divHp {
+  width: 33px;
+  height: 30px;
+  margin-left: 10px;
+  background-image: url("../img/heart.png");
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'nasa';
+  font-weight: bold;
+
+
+
+}
+
+.divAtk {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-image: url("../img/atk1.png");
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'nasa';
+  font-weight: bold;
+
+}
+
+.divCost {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-image: url("../img/dollar.png");
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'nasa';
+  font-weight: bold;
+
+}
+
+.divMCS {
+  margin-left: 10px;
+  font-size: 12px;
+
+}
+
+
+
+#chat {
+
+
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(46, 126, 196, 0.788);
+  display: flex;
+  color:white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'nasa';
+
+
+}
+
+.lobby {
+
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  margin-bottom: 500px;
+
+}
+
+.frame1 {
+
+
+  width: 100px;
+  height: 50px;
+
+}
+

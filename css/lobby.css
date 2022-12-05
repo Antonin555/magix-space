@@ -1,0 +1,336 @@
+@font-face {
+  font-family: Nasa;
+  src: url("/font/nasalization-rg.otf");
+}
+
+
+html {
+
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+
+#canvas {
+
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-family: 'nasa';
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  z-index:-20;
+
+}
+
+
+body {
+
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image:linear-gradient(to bottom, rgb(4, 4, 7), rgb(47, 37, 136));
+ 
+
+
+}
+
+
+.spaceTitle {
+
+  font-family: 'nasa';
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+  color: rgb(0, 0, 0);
+
+}
+
+.container2 {
+
+  width: 100%;
+  height: 50px;
+
+  text-align: center;
+  font-family: 'nasa';
+
+}
+
+form {
+
+  margin-top: 40px;
+  
+  height: 120px;
+  text-align: center;
+
+
+}
+
+
+#canvas {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  color: black;
+  overflow: hidden;
+}
+
+.navlink {
+height: 10vh;
+
+
+}
+
+.navbar {
+  display: block;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0;
+  height: 5vh;
+  margin-bottom: 20px;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 0px 20 px;
+  margin: 30px;
+  height: 50px;
+
+
+}
+
+.navbar li a {
+  transition: all 0.3s ease 0s;
+  background-color: transparent;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+
+  font-family: 'nasa';
+}
+
+.logo {
+
+  width: 50px;
+
+}
+
+
+h1, h2 {
+
+  margin-bottom: 20px ;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-size: 35px;
+  font-family: 'nasa';
+  display:inline-block;
+}
+
+
+.lobby {
+  margin-top: 120px;
+  overflow-y: hidden;
+  height: 43%;
+  position: relative;
+  
+  
+  
+  
+}
+
+.frame1 {
+
+  
+  width: 50%;
+  margin-left: 25%;
+  background-color: rgba(118, 123, 228, 0.5);
+  height: 60%;
+  
+  border: 1px solid white;
+}
+
+
+
+
+.bouton1 {
+  margin-top: 10px;
+  width: 140px;
+  height: 140px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'nasa';
+  border: #fff;
+  font-size: 20px;
+  color: #fff;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px black;
+  border: 1px black;
+  background-color: transparent;
+  animation: anim 10s linear infinite;
+}
+
+
+
+
+
+@keyframes anim {
+  0% {
+    box-shadow: 0 0 30px rgb(238, 210, 84), inset 0 0 50px black;
+  }
+
+  10% {
+    box-shadow: 0 0 52px rgb(221, 184, 115), inset 0 0 50px black;
+  }
+
+  20% {
+    box-shadow: 0 0 75px rgb(212, 203, 75), inset 0 0 50px black;
+  }
+
+  30% {
+    box-shadow: 0 0 100px rgb(250, 145, 85), inset 0 0 50px black;
+  }
+
+  40% {
+    box-shadow: 0 0 120px rgb(211, 81, 81), inset 0 0 50px black;
+  }
+
+  50% {
+    box-shadow: 0 0 152px rgb(243, 131, 86), inset 0 0 50px black;
+  }
+
+  60% {
+    box-shadow: 0 0 120px rgb(235, 218, 68), inset 0 0 50px black;
+  }
+
+  70% {
+    box-shadow: 0 0 100px rgb(243, 135, 72), inset 0 0 50px black;
+  }
+
+  80% {
+    box-shadow: 0 0 70px rgb(209, 68, 68), inset 0 0 50px black;
+  }
+
+  81% {
+    box-shadow: 0 0 70px rgb(255, 255, 255), inset 0 0 50px rgb(255, 255, 255);
+  }
+
+  81.8% {
+    box-shadow: 0 0 70px rgb(209, 68, 68), inset 0 0 50px black;
+  }
+
+  90% {
+    box-shadow: 0 0 85px rgb(209, 136, 68), inset 0 0 50px black;
+  }
+
+  100% {
+    box-shadow: 0 0 50px rgb(226, 173, 103), inset 0 0 50px black;
+  }
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.anim {
+
+  margin-top: 50px;
+
+}
+
+.main {
+  margin-left: 22%;
+  margin-right: 8%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.main .container {
+  width: 200px;
+  height: 200px;
+
+  transform-style: preserve-3d;
+  position: relative;
+  transition: all 1s ease;
+  animation: animate 12s linear infinite;
+}
+@keyframes animate {
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+.main .container div {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 29, 77, 0.856);
+  box-shadow: inset 0 0 20px rgb(255, 255, 255);
+  position: absolute;
+}
+.main .container div:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.main .container div:nth-child(3) {
+  transform: rotateX(90deg);
+}
+.main .container div:nth-child(4) {
+  transform: rotateX(135deg);
+}
+
+
+
+
+.main2 {
+
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+}
+.main2 .container2 {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: all 1s ease;
+  animation: animate 12s linear infinite;
+}
+@keyframes animate {
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+.main2 .container2 div {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 8, 133, 0.726);
+  box-shadow: inset 0 0 20px rgb(255, 255, 255);
+  position: absolute;
+}
+.main2 .container2 div:nth-child(2) {
+  transform: rotateX(45deg);
+}
+.main2 .container2 div:nth-child(3) {
+  transform: rotateX(90deg);
+}
+.main2 .container2 div:nth-child(4) {
+  transform: rotateX(135deg);
+}

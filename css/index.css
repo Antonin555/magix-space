@@ -1,0 +1,198 @@
+
+@font-face {
+    font-family: Nasa;
+    src: url("/font/nasalization-rg.otf");
+  }
+
+
+
+html {
+    
+	height:100%;
+    width: 100%;
+	background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#api-message {
+
+    margin: 10px;
+    width: 10px;
+}
+#logo {
+
+    width: 150px;
+    margin: 20px 120px 10px 120px;
+
+}
+
+
+.container{
+    
+    position: relative;
+    width: 100px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+
+}
+
+.icon {
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    padding-top:-50px ;
+}
+
+.sign-in-input-group {
+
+    width:400px;
+    height: 600px;
+    border-radius: 10px;
+    margin:100px auto;
+    
+    border: 0.5px solid #ffffff;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.301), rgba(127, 86, 160, 0.356));
+
+    
+}
+input{
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 80px;
+    border-bottom: 1px white solid;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+
+input:focus{
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+input[type=text], input[type=password] {
+    color:white;
+    font-size: large;
+
+}
+
+input::placeholder{
+
+    font-size: large;
+    color: white;
+    opacity: 1;
+
+}
+
+input[type="checkbox"]{
+
+
+    display: inline-block;
+    color: #ffffff;
+    width: auto;
+    margin: 10px 0px 10px 145px; 
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+input[type="checkbox"]:link{
+
+
+    background-color:white;
+}
+
+
+.button {
+
+    background-color: rgba(37, 105, 231, 0.404);
+    border: none;
+    border-radius:10px;
+    color: white;
+    font-size: large;
+    padding: 14px 20px;
+    margin: 20px 100px 10px 125px;
+    width: 150px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#Name {
+
+    font-family: 'Nasa', serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0px 20px 50px;
+    color:white;
+
+}
+
+.button:hover{
+
+    background-color: rgba(52, 26, 197, 0.144);
+}
+
+#href {
+
+    position: absolute;
+    background-color: rgba(52, 26, 197, 0.301);
+}
+
+a:link {
+    
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+
+}
+h3 {
+
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: small;
+    color:white;
+
+}
+#canvas {
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -100px;
+    z-index: -1;
+	overflow: hidden;
+    background-image: linear-gradient(to bottom, rgb(4, 4, 7), rgb(47, 37, 136));
+
+}
+
+
+#divEssai{
+
+
+    background-color:rgb(255, 0, 0);
+    margin-top:100px;
+    width: 100px;
+    height: 100px;
+    z-index:1;
+    
+
+}
+
+.error-div{
+
+    color:rgb(247, 0, 0);
+    font-size: x-large;
+    font-family: 'nasa';
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    height: 30px;
+
+}
+
