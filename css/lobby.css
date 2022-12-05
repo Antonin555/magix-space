@@ -121,7 +121,7 @@ height: 10vh;
 }
 
 
-h1, h2 {
+h2 {
 
   margin-bottom: 20px ;
   color: rgb(0, 0, 0);
@@ -136,16 +136,12 @@ h1, h2 {
   margin-top: 120px;
   overflow-y: hidden;
   height: 43%;
-  position: relative;
-  
-  
-  
+  display: none;
   
 }
 
-.frame1 {
+.frame1 {  
 
-  
   width: 50%;
   margin-left: 25%;
   background-color: rgba(118, 123, 228, 0.5);

@@ -8,13 +8,11 @@ $data = $action->execute();
 
 ?>
 
-
-
 <div class="grid-container">
   <div class="gridInfo">
 
 
-    <div id="chat">chat</div>
+    
     <div class="scorePlayer">
       <div id="user">
         <?= $data["username"] ?>
@@ -35,8 +33,6 @@ $data = $action->execute();
 
   </div>
 
-
-
   <div id="gridOpponent">
     <div id="surrender">
       <h1>S</h1>
@@ -52,14 +48,4 @@ $data = $action->execute();
   <div id="gridPlayer"></div>
 
 
-
-
 </div>
-
-<div class="lobby">
-  <iframe class="frame1" src="https://magix.apps-de-cours.com/server/#/chat/<?= $_SESSION["key"] ?>">
-  </iframe>
-
-
-  <div class="circle"></div>
-  <div class="circle2"></div>

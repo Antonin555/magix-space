@@ -36,6 +36,8 @@ heroPower.onclick = () => {
 }
 
 
+
+
 function clearGame() {
 
 	document.getElementById("gridPlayer").innerHTML = "";
@@ -71,10 +73,7 @@ function createCards(board, div, state) {
 
 		if (div == document.getElementById("gridPlayer")) {
 
-
-
 			uidPlayer = board[card]["uid"];
-
 
 			divHp.innerHTML += board[card]["hp"];
 			divAtk.innerHTML += board[card]["atk"];
@@ -308,6 +307,8 @@ const updateGame = data => {
 	let divBoardOpponent = document.getElementById("gridBoardOpponent");
 	let divBoardPlayer = document.getElementById("gridBoardPlayer");
 
+
+	// create cards :
 	createCards(data.hand, divHandPlayer, data);
 	createCards(data.opponent.board, divBoardOpponent, data);
 	createCards(data.board, divBoardPlayer, data);
