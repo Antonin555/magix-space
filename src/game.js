@@ -26,9 +26,13 @@ endTurn.onclick = () => {
 }
 
 heroPower.onclick = () => {
-	gameAction("HERO_POWER", null, null);
-	heroPowerUsed = true;
-	fadeOutEffect();
+	if(heroPowerUsed == true) {
+
+		gameAction("HERO_POWER", null, null);
+		heroPowerUsed = true;
+		fadeOutEffect();
+	}
+
 }
 
 
@@ -92,10 +96,12 @@ function createCards(board, div, state) {
 				//divBoardPlayer.append(cardPlayer);
 			}
 			if (state.yourTurn == true) {
+				heroPowerUsed = true;
 				document.getElementById("gridBoardOpponent").style.boxShadow = "0 0 0";
 				document.getElementById("gridBoardPlayer").style.boxShadow = "0 0 65px #ffffff";
 
 			} else {
+				heroPowerUsed = false;
 				document.getElementById("gridBoardPlayer").style.boxShadow = "0 0 0";
 				document.getElementById("gridBoardOpponent").style.boxShadow = "0 0 65px #ffffff";
 
