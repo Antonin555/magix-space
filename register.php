@@ -1,4 +1,3 @@
-
 <?php
 
 require_once("action/registerAction.php");
@@ -9,17 +8,13 @@ $data = $action->executeAction();
 require_once("partial/headerRegister.php");
 
 
+?>
+<div class="btnBack"><a href="./lobby.php">BACK</div>
+
+<iframe class="frame2" src="https://magix.apps-de-cours.com/server/#/deck/<?= $_SESSION["key"] ?>">
+</iframe>
 
 
-    
 
-	?>
-	<div class="btnBack"><a href="./lobby.php">BACK</div>
-
-    <iframe class="frame2" src="https://magix.apps-de-cours.com/server/#/deck/<?=$_SESSION["key"]?>">
-    </iframe>   
-    
-
-
-    <?php
+<?php
     require_once("partial/footer.php");

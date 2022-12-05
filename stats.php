@@ -12,7 +12,8 @@ $data = $action->execute();
     </h1>
 </div>
 
-<div class="totalCards">Total cartes jouées : <?= $data["count"][0]["count"] ?></div>
+<div class="totalCards">Total cartes jouées : <?= $data["count"][0]["count"] ?>
+</div>
 
 <div class="gridInfoStats">
     <div class="title">ID cartes :</div>
@@ -20,8 +21,6 @@ $data = $action->execute();
     <div class="title">Ratio :</div>
 
 </div>
-
-
 
 <?php
 
@@ -35,7 +34,7 @@ if (!empty($data["answers"])) {
 
         <?php
     foreach ($data["answers"] as $item) {
-    ?>
+        ?>
         <div class="answer">
             <div class="text">
                 <?= $item["cardid"]; ?>
@@ -51,8 +50,8 @@ if (!empty($data["answers"])) {
     <div class="gridCarteNumber">
 
         <?php
-foreach ($data["numberByCard"] as $item) {
-?>
+        foreach ($data["numberByCard"] as $item) {
+        ?>
         <div class="answer">
             <div class="text">
                 <?= $item["count"]; ?>
@@ -61,7 +60,7 @@ foreach ($data["numberByCard"] as $item) {
 
         </div>
         <?php
-}
+        }
         ?>
     </div>
     <?php
@@ -70,8 +69,8 @@ foreach ($data["numberByCard"] as $item) {
     <div class="gridRatio">
 
         <?php
-foreach ($data["ratio"] as $item) {
-?>
+        foreach ($data["ratio"] as $item) {
+        ?>
         <div class="answer">
             <div class="text">
                 <?= $item . " %"; ?>
@@ -80,7 +79,7 @@ foreach ($data["ratio"] as $item) {
 
         </div>
         <?php
-}
+        }
         ?>
     </div>
     <?php
@@ -90,12 +89,12 @@ foreach ($data["ratio"] as $item) {
 </div>
 
 <div class="formDiv">
-<form action="" method="POST">
+    <form action="" method="POST">
 
-    <button class="btnClear" type="submit" name="clear">CLEAR ALL</button>
+        <button class="btnClear" type="submit" name="clear">CLEAR ALL</button>
 
-</form>
+    </form>
 
-<div class="btnBack"><a href="./lobby.php">BACK</div>
+    <div class="btnBack"><a href="./lobby.php">BACK</div>
 
 </div>
