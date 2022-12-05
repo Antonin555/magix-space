@@ -1,10 +1,10 @@
 <?php
- 
-    require_once("action/boardAction.php");
-    require_once("partial/headerBoard.php");
-    $action = new boardAction();
-    $data = $action->execute();
-   
+
+require_once("action/boardAction.php");
+require_once("partial/headerBoard.php");
+$action = new boardAction();
+$data = $action->execute();
+
 
 ?>
 
@@ -16,7 +16,7 @@
 
       <div id="chat">chat</div>
         <div class="scorePlayer">
-          <div id="user"><?=$data["username"]?></div>
+          <div id="user"><?= $data["username"] ?></div>
           <div id ="scoreP"></div>
           <div class="mp"></div> 
         </div>
