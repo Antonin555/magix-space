@@ -13,8 +13,6 @@ addEventListener('load', () => {
         spriteList.push(new Stars());
      }
 
-
-
     tick();
     
     
@@ -27,8 +25,7 @@ class Stars {
         this.y = Math.random()*canvas.height;
         this.radius = Math.random() * 2;
         this.opacity = 1.0;
-        this.couleur1 = Math.floor(Math.random()* 256);
-        this.couleur2 = Math.floor(Math.random()* 256);
+
     }
 
     tick() {
@@ -40,8 +37,6 @@ class Stars {
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         ctx.fillStyle = "rgba(255 , 255,255,"+ this.opacity + ")";
         ctx.fill();
-
-        
 
         if (this.opacity <= 0.0) { 
             
@@ -59,9 +54,7 @@ class Stars {
 const tick = () => {
 
 
-    //ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-
+    ctx.clearRect(0, 0, canvas.width, canvas.height);    
     for (let i = 0; i < spriteList.length; i++) {
         const sprite = spriteList[i];
         let alive = sprite.tick();

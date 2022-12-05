@@ -30,8 +30,7 @@ addEventListener('load', () => {
 });
 
 const tick = () => {
-
-
+ 
     for (let i = 0; i < spriteList.length; i++) {
         const sprite = spriteList[i];
         let alive = sprite.tick();
@@ -47,8 +46,6 @@ const tick = () => {
 
 const getPlanetForOptions = (radius, velocity, orbitRadius, color) =>
     new Planet(canvas.width,canvas.height / 2,radius,color,velocity / 200,orbitRadius);
-
-
 
 
 class Planet {

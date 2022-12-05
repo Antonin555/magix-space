@@ -16,6 +16,5 @@
     </head>
     <body> 
     
-    <canvas id="canvas">    
-</canvas>
+    <canvas id="canvas"></canvas>
     

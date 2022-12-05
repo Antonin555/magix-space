@@ -93,7 +93,7 @@ class Planet {
 const tick = () => {
 
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);    
+    
 
     for (let i = 0; i < spriteList.length; i++) {
         const sprite = spriteList[i];

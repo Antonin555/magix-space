@@ -7,10 +7,9 @@
      
         <script type="module"  src="src/game.js"></script>
         <script type="module" src="src/stars.js"></script>
-        <script type="module" src="src/page-lobby.js"></script>
+        <script type="module" src="src/page-board.js"></script>
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/board.css">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
