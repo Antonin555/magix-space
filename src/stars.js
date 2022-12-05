@@ -32,18 +32,20 @@ class Stars {
     }
 
     tick() {
+
+        let alive = true;
         this.opacity -= 0.01;
         
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = "rgba(255 , 255,255,1)";
+        ctx.fillStyle = "rgba(255 , 255,255,"+ this.opacity + ")";
         ctx.fill();
 
-        let alive = true;
+        
 
-        if (this.opacity <= 0.0) {
-            this.opacity = Math.random() * 10.0;
+        if (this.opacity <= 0.0) { 
             
+            this.opacity= Math.random() * 10;
             alive = true;
         } 
         
@@ -57,7 +59,7 @@ class Stars {
 const tick = () => {
 
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //ctx.clearRect(0, 0, canvas.width, canvas.height);
     
 
     for (let i = 0; i < spriteList.length; i++) {

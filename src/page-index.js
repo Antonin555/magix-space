@@ -21,44 +21,15 @@ window.addEventListener('load', () => {
     spriteList.push(getPlanetForOptions(7, 1, 750, '#49e3ce')); 
 
 
-    for (let i = 0; i < 500; i++) {
-       spriteList.push(new Stars());
-    }
-
     tick();
     
     
 });
 
 
-class Stars {
-    constructor() {
-        this.x = Math.random()*canvas.width;
-        this.y = Math.random()*canvas.height;
-        this.radius = Math.random() * 2;
-        this.opacity = 1.0;
-        this.couleur1 = Math.floor(Math.random()* 256);
-        this.couleur2 = Math.floor(Math.random()* 256);
-    }
+const getPlanetForOptions = (radius, velocity, orbitRadius, color) =>
+    new Planet(canvas.width / 2,canvas.height / 2,radius,color,velocity / 200,orbitRadius);
 
-    tick() {
-        this.opacity -= 0.01;
-
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = "rgba(255 , "+ this.couleur2+","+ this.couleur1 + "," + this.opacity + ")";
-        ctx.fill();
-
-        let alive = true;
-
-        if (this.opacity <= 0.0) {
-            this.opacity = Math.random() * 10.0;
-            alive = true;
-        } 
-        
-        return alive;
-    }
-}
 
 
 class Planet {
@@ -116,30 +87,8 @@ class Planet {
     }
 
 
-    tick2() {
-        this.draw();
-        let alive = true;
-        if (this.velocity > 0) {
-            this.radian += this.velocity;
-            this.x = this.startX  * this.orbitRadius; // on reduit la position de x avec le cos 
-            this.y = this.startY * this.orbitRadius; // on augmente le y avec le sinus
-            alive = true;
-
-        } else
-            alive = false;
-        return alive;
-    }
-
-
 }
 
-
-
-
-
-
-const getPlanetForOptions = (radius, velocity, orbitRadius, color) =>
-    new Planet(canvas.width / 2,canvas.height / 2,radius,color,velocity / 200,orbitRadius);
 
 const tick = () => {
 
