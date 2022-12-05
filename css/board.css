@@ -23,7 +23,7 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgb(4, 4, 7), rgb(47, 37, 136));
+  background-image: linear-gradient(to bottom, rgba(20, 18, 18, 0.788), rgba(7, 0, 14, 0.959));
 
   background-size: cover;
 

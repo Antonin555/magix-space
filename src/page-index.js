@@ -10,14 +10,14 @@ window.addEventListener('load', () => {
     canvas.width = innerWidth;
     canvas.height = innerHeight;
 
-    spriteList.push(getPlanetForOptions(5, 5, 90, '#efdcbc')); 
+    spriteList.push(getPlanetForOptions(5, 5, 90, '#697645')); 
     spriteList.push(getPlanetForOptions(10, 4, 125, '#FF0010')); 
-    spriteList.push(getPlanetForOptions(15, 3, 175, '#d3bd8d')); 
+    spriteList.push(getPlanetForOptions(15, 3, 175, '#9ca5af')); 
     spriteList.push(getPlanetForOptions(20, 3.5, 250, '#b99f7a')); 
-    spriteList.push(getPlanetForOptions(25, 3, 320, '#8f6f40')); 
-    spriteList.push(getPlanetForOptions(20, 2.5, 375, '#988d62')); 
-    spriteList.push(getPlanetForOptions(15, 2, 450, '#909a9c')); 
-    spriteList.push(getPlanetForOptions(25, 1.5, 550, '#CCA6D8')); 
+    spriteList.push(getPlanetForOptions(25, 3, 320, '#d3672f')); 
+    spriteList.push(getPlanetForOptions(20, 2.5, 375, '#a3c3ca')); 
+    spriteList.push(getPlanetForOptions(15, 2, 450, '#eb7b20')); 
+    spriteList.push(getPlanetForOptions(25, 1.5, 550, '#634e9d')); 
     spriteList.push(getPlanetForOptions(7, 1, 750, '#49e3ce')); 
 
 

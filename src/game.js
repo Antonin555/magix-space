@@ -35,9 +35,6 @@ heroPower.onclick = () => {
 
 }
 
-
-
-
 function clearGame() {
 
 	document.getElementById("gridPlayer").innerHTML = "";

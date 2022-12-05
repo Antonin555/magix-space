@@ -15,24 +15,15 @@ html {
 }
 
 
-#canvas {
-
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
-  font-family: 'nasa';
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  z-index:-20;
-
-}
-
 
 body {
 
   height: 100%;
   width: 100%;
   background-size: cover;
-  background-image:linear-gradient(to bottom, rgb(4, 4, 7), rgb(47, 37, 136));
- 
+
+  background-image: linear-gradient(to bottom, rgba(20, 18, 18, 0.788), rgba(7, 0, 14, 0.959));
+
 
 
 }
@@ -61,7 +52,7 @@ body {
 form {
 
   margin-top: 40px;
-  
+
   height: 120px;
   text-align: center;
 
@@ -80,7 +71,7 @@ form {
 }
 
 .navlink {
-height: 10vh;
+  height: 10vh;
 
 
 }
@@ -121,14 +112,15 @@ height: 10vh;
 }
 
 
+h1,
 h2 {
 
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
   color: rgb(0, 0, 0);
   -webkit-text-stroke: 1px rgb(255, 255, 255);
   font-size: 35px;
   font-family: 'nasa';
-  display:inline-block;
+  display: inline-block;
 }
 
 
@@ -136,17 +128,17 @@ h2 {
   margin-top: 120px;
   overflow-y: hidden;
   height: 43%;
-  display: none;
-  
+
+
 }
 
-.frame1 {  
+.frame1 {
 
   width: 50%;
   margin-left: 25%;
-  background-color: rgba(118, 123, 228, 0.5);
+  background-color: rgba(75, 79, 150, 0.5);
   height: 60%;
-  
+
   border: 1px solid white;
 }
 
@@ -258,6 +250,7 @@ h2 {
   align-items: center;
   z-index: -1;
 }
+
 .main .container {
   width: 200px;
   height: 200px;
@@ -267,25 +260,30 @@ h2 {
   transition: all 1s ease;
   animation: animate 12s linear infinite;
 }
+
 @keyframes animate {
   to {
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
+
 .main .container div {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  background: rgba(4, 29, 77, 0.856);
+  background: rgba(7, 4, 51, 0.726);
   box-shadow: inset 0 0 20px rgb(255, 255, 255);
   position: absolute;
 }
+
 .main .container div:nth-child(2) {
   transform: rotateX(45deg);
 }
+
 .main .container div:nth-child(3) {
   transform: rotateX(90deg);
 }
+
 .main .container div:nth-child(4) {
   transform: rotateX(135deg);
 }
@@ -300,6 +298,7 @@ h2 {
   align-items: center;
   margin-left: 8%;
 }
+
 .main2 .container2 {
   width: 200px;
   height: 200px;
@@ -308,25 +307,30 @@ h2 {
   transition: all 1s ease;
   animation: animate 12s linear infinite;
 }
+
 @keyframes animate {
   to {
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
+
 .main2 .container2 div {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  background: rgba(16, 8, 133, 0.726);
+  background: rgba(7, 4, 51, 0.726);
   box-shadow: inset 0 0 20px rgb(255, 255, 255);
   position: absolute;
 }
+
 .main2 .container2 div:nth-child(2) {
   transform: rotateX(45deg);
 }
+
 .main2 .container2 div:nth-child(3) {
   transform: rotateX(90deg);
 }
+
 .main2 .container2 div:nth-child(4) {
   transform: rotateX(135deg);
 }
