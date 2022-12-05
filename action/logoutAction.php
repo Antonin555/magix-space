@@ -1,12 +1,15 @@
 <?php
 require_once("action/CommonAction.php");
 
-class LogoutAction extends CommonAction {
-    public function __construct() {
+class LogoutAction extends CommonAction
+{
+    public function __construct()
+    {
         parent::__construct(CommonAction::$VISIBILITY_MEMBER);
     }
 
-    protected function executeAction() {
+    protected function executeAction()
+    {
 
         session_start();
 
@@ -22,4 +25,3 @@ class LogoutAction extends CommonAction {
     }
 
 }
-

@@ -1,16 +1,19 @@
 <?php
-    require_once("action/CommonAction.php");
+require_once("action/CommonAction.php");
 
 
 
 
-class RegisterAction extends CommonAction {
+class RegisterAction extends CommonAction
+{
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct(CommonAction::$VISIBILITY_MEMBER);
     }
 
-    function executeAction(){
+    function executeAction()
+    {
 
         return [];
     }

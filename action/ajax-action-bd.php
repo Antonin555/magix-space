@@ -28,8 +28,8 @@ class AjaxBD extends CommonAction
         $answers = StatsAction::getCardCount();
         $count = StatsAction::countRow();
         $numberByCard = StatsAction::countCard();
-        
-        $i =0;
+
+        $i = 0;
         foreach ($numberByCard as $number) {
             $r = $number["count"];
             $totalCards = $count[0]["count"];
@@ -38,8 +38,10 @@ class AjaxBD extends CommonAction
             $i++;
         }
 
-        
-        if (isset($_POST['clear'])){ StatsAction::clearCard(); }
+
+        if (isset($_POST['clear'])) {
+            StatsAction::clearCard();
+        }
 
         return compact("answers", "count", "numberByCard", "ratio");
 
